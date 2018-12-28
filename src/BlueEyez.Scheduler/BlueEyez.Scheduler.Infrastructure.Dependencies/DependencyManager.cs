@@ -16,7 +16,7 @@ namespace BlueEyez.Scheduler.Infrastructure.Dependencies
             RegisterCacheDependencyConfig();
             RegisterLoggerDependencyConfig();
             RegisterDataServiceDependencyConfig();
-            RegisterRepositoryDependencyConfig();
+            RegisterDbDependencyConfig();
             RegisterServiceDependencyConfig();
             RegisterEngineDependencyConfig();
         }
@@ -41,9 +41,9 @@ namespace BlueEyez.Scheduler.Infrastructure.Dependencies
             DependencyConfigurationManager.AddConfiguration<DataServiceDependencyConfigurations>();
         }
 
-        protected void RegisterRepositoryDependencyConfig()
+        protected void RegisterDbDependencyConfig()
         {
-            DependencyConfigurationManager.AddConfiguration<RepositoryDependencyConfigurations>();
+            DependencyConfigurationManager.AddConfiguration<DbDependencyConfigurations>();
         }
 
         protected virtual void RegisterServiceDependencyConfig()
@@ -53,7 +53,7 @@ namespace BlueEyez.Scheduler.Infrastructure.Dependencies
 
         protected virtual void RegisterEngineDependencyConfig()
         {
-            DependencyConfigurationManager.AddConfiguration<QuartzEngineDependencyConfigurations>();
+            DependencyConfigurationManager.AddConfiguration<EngineDependencyConfigurations>();
         }
     }
 }

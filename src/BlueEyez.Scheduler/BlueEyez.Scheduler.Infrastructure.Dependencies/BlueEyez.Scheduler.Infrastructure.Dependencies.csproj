@@ -37,10 +37,9 @@
     <Compile Include="Configurations\BasicDependencyConfigurations.cs" />
     <Compile Include="Configurations\CacheDependencyConfigurations.cs" />
     <Compile Include="Configurations\DataServiceDependencyConfigurations.cs" />
+    <Compile Include="Configurations\DbDependencyConfigurations.cs" />
+    <Compile Include="Configurations\EngineDependencyConfigurations.cs" />
     <Compile Include="Configurations\LoggerDependencyConfigurations.cs" />
-    <Compile Include="Configurations\NLogLoggerDependencyConfigurations.cs" />
-    <Compile Include="Configurations\QuartzEngineDependencyConfigurations.cs" />
-    <Compile Include="Configurations\RepositoryDependencyConfigurations.cs" />
     <Compile Include="Configurations\ServiceDependencyConfigurations.cs" />
     <Compile Include="Configurations\WebCacheDependencyConfigurations.cs" />
     <Compile Include="DependencyManager.cs" />
@@ -63,10 +62,6 @@
       <Project>{B749C318-69A4-4663-AAAA-4C6C7D66A65A}</Project>
       <Name>BlueEyez.Scheduler.Dependencies</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BlueEyez.Scheduler.Domain.Data.EntityFramework\BlueEyez.Scheduler.Domain.Data.EntityFramework.csproj">
-      <Project>{91C12F0F-1BC9-4A8B-B41A-BC1DAABDB908}</Project>
-      <Name>BlueEyez.Scheduler.Domain.Data.EntityFramework</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BlueEyez.Scheduler.Domain.Data\BlueEyez.Scheduler.Domain.Data.csproj">
       <Project>{3DEAE151-80A1-4104-B0A8-E647A5FEE728}</Project>
       <Name>BlueEyez.Scheduler.Domain.Data</Name>
@@ -75,17 +70,9 @@
       <Project>{B06E4B14-775C-42F3-86F2-0E5AC523350D}</Project>
       <Name>BlueEyez.Scheduler.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BlueEyez.Scheduler.Engine.Quartz\BlueEyez.Scheduler.Engine.Quartz.csproj">
-      <Project>{BE749901-ACEF-4569-BC2F-E32159E941DB}</Project>
-      <Name>BlueEyez.Scheduler.Engine.Quartz</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BlueEyez.Scheduler.Engine\BlueEyez.Scheduler.Engine.csproj">
       <Project>{E9567931-E8C4-4DEC-B654-1F34648014E0}</Project>
       <Name>BlueEyez.Scheduler.Engine</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BlueEyez.Scheduler.Infrastructure.Data.EntityFramework\BlueEyez.Scheduler.Infrastructure.Data.EntityFramework.csproj">
-      <Project>{D9ADF076-299E-4C7E-8CD7-D66B0B5A7668}</Project>
-      <Name>BlueEyez.Scheduler.Infrastructure.Data.EntityFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\BlueEyez.Scheduler.Infrastructure.Data\BlueEyez.Scheduler.Infrastructure.Data.csproj">
       <Project>{CC094131-3B18-4201-B139-5E2B79ECE0FD}</Project>
@@ -94,10 +81,6 @@
     <ProjectReference Include="..\BlueEyez.Scheduler.Infrastructure\BlueEyez.Scheduler.Infrastructure.csproj">
       <Project>{AF10ED7B-17C5-48D2-8D94-B9A05D8D8086}</Project>
       <Name>BlueEyez.Scheduler.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BlueEyez.Scheduler.Logging.NLog\BlueEyez.Scheduler.Logging.NLog.csproj">
-      <Project>{1EFD46CB-9BB8-415B-8656-2483A7FBB71A}</Project>
-      <Name>BlueEyez.Scheduler.Logging.NLog</Name>
     </ProjectReference>
     <ProjectReference Include="..\BlueEyez.Scheduler.Logging\BlueEyez.Scheduler.Logging.csproj">
       <Project>{7006ADAD-882A-4D8F-99D4-16CB3B505B90}</Project>

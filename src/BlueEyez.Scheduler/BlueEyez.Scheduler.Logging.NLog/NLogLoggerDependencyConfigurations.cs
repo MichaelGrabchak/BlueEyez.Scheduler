@@ -1,8 +1,8 @@
 ﻿using BlueEyez.Scheduler.Dependencies;
-using BlueEyez.Scheduler.Logging;
+using BlueEyez.Scheduler.Infrastructure.Dependencies.Configurations;
 using BlueEyez.Scheduler.Logging.NLog.Loggers;
 
-namespace BlueEyez.Scheduler.Infrastructure.Dependencies.Configurations
+namespace BlueEyez.Scheduler.Logging.NLog
 {
     public sealed class NLogLoggerDependencyConfigurations : LoggerDependencyConfigurations
     {

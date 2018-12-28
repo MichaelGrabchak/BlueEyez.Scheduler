@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Loggers\NLogLogger.cs" />
+    <Compile Include="NLogLoggerDependencyConfigurations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +57,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Dependencies\BlueEyez.Scheduler.Dependencies.csproj">
+      <Project>{B749C318-69A4-4663-AAAA-4C6C7D66A65A}</Project>
+      <Name>BlueEyez.Scheduler.Dependencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Infrastructure.Dependencies\BlueEyez.Scheduler.Infrastructure.Dependencies.csproj">
+      <Project>{F1ACB17A-0B03-4B65-B766-F8F17516B61F}</Project>
+      <Name>BlueEyez.Scheduler.Infrastructure.Dependencies</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlueEyez.Scheduler.Logging\BlueEyez.Scheduler.Logging.csproj">
       <Project>{7006adad-882a-4d8f-99d4-16cb3b505b90}</Project>
       <Name>BlueEyez.Scheduler.Logging</Name>

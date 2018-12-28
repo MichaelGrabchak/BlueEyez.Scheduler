@@ -52,6 +52,7 @@
     <Compile Include="Listeners\DependentJobListener.cs" />
     <Compile Include="Listeners\DependentTriggerListener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuartzEngineDependencyConfigurations.cs" />
     <Compile Include="QuartzJob.cs" />
     <Compile Include="QuartzJobMetadata.cs" />
     <Compile Include="QuartzScheduler.cs" />
@@ -71,6 +72,10 @@
     <ProjectReference Include="..\BlueEyez.Scheduler.Engine\BlueEyez.Scheduler.Engine.csproj">
       <Project>{E9567931-E8C4-4DEC-B654-1F34648014E0}</Project>
       <Name>BlueEyez.Scheduler.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Infrastructure.Dependencies\BlueEyez.Scheduler.Infrastructure.Dependencies.csproj">
+      <Project>{F1ACB17A-0B03-4B65-B766-F8F17516B61F}</Project>
+      <Name>BlueEyez.Scheduler.Infrastructure.Dependencies</Name>
     </ProjectReference>
     <ProjectReference Include="..\BlueEyez.Scheduler.Job\BlueEyez.Scheduler.Job.csproj">
       <Project>{BEABA87A-A034-48AA-B3C5-A7211E84DF25}</Project>

@@ -36,7 +36,6 @@
   <ItemGroup>
     <Compile Include="Attributes\JobMetadataAttribute.cs" />
     <Compile Include="BaseJob.cs" />
-    <Compile Include="Constants.cs" />
     <Compile Include="Extensions\BaseJobExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
