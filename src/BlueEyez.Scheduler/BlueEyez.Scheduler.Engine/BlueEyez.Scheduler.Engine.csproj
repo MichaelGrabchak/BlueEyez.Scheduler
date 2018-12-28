@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9567931-E8C4-4DEC-B654-1F34648014E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlueEyez.Scheduler.Engine</RootNamespace>
+    <AssemblyName>BlueEyez.Scheduler.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseScheduler.cs" />
+    <Compile Include="EngineInfo.cs" />
+    <Compile Include="Enums\EngineState.cs" />
+    <Compile Include="Enums\JobActionState.cs" />
+    <Compile Include="Enums\JobState.cs" />
+    <Compile Include="Extensions\EngineInfoExtensions.cs" />
+    <Compile Include="Extensions\JobInfoExtensions.cs" />
+    <Compile Include="ISchedulerEngine.cs" />
+    <Compile Include="Jobs\JobInfo.cs" />
+    <Compile Include="Jobs\JobMetadata.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchedulerEventHandlers.cs" />
+    <Compile Include="SchedulerSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Domain.Data\BlueEyez.Scheduler.Domain.Data.csproj">
+      <Project>{3DEAE151-80A1-4104-B0A8-E647A5FEE728}</Project>
+      <Name>BlueEyez.Scheduler.Domain.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Domain\BlueEyez.Scheduler.Domain.csproj">
+      <Project>{B06E4B14-775C-42F3-86F2-0E5AC523350D}</Project>
+      <Name>BlueEyez.Scheduler.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Job\BlueEyez.Scheduler.Job.csproj">
+      <Project>{BEABA87A-A034-48AA-B3C5-A7211E84DF25}</Project>
+      <Name>BlueEyez.Scheduler.Job</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Loader\BlueEyez.Scheduler.Loader.csproj">
+      <Project>{A52B75D0-4AF3-4BBA-8514-381C469208A8}</Project>
+      <Name>BlueEyez.Scheduler.Loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlueEyez.Scheduler.Logging\BlueEyez.Scheduler.Logging.csproj">
+      <Project>{7006ADAD-882A-4D8F-99D4-16CB3B505B90}</Project>
+      <Name>BlueEyez.Scheduler.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
