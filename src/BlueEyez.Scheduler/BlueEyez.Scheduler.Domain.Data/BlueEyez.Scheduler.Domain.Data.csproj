@@ -47,5 +47,8 @@
     <Compile Include="Services\IJobDetailService.cs" />
     <Compile Include="Services\ISettingsService.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="BlueEyez.Scheduler.Domain.Data.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

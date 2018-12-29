@@ -52,5 +52,8 @@
       <Name>BlueEyez.Scheduler.Domain.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="BlueEyez.Scheduler.Infrastructure.Data.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

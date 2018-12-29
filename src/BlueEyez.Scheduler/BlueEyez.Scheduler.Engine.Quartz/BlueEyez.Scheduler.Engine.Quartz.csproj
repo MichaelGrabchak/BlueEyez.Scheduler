@@ -58,6 +58,7 @@
     <Compile Include="QuartzScheduler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BlueEyez.Scheduler.Engine.Quartz.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
