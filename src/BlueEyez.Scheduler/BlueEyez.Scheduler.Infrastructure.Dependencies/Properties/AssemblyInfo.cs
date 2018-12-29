@@ -1,14 +1,13 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BlueEyez.Scheduler.Infrastructure.Dependencies")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The infrastructure dependencies of BlueEyez.Scheduler")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("BlueEyez")]
 [assembly: AssemblyProduct("BlueEyez.Scheduler.Infrastructure.Dependencies")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]

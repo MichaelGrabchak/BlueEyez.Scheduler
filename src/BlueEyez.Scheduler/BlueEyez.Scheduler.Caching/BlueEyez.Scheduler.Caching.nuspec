@@ -15,7 +15,4 @@
 		  <dependency id="BlueEyez.Scheduler.Core" version="$version$" />
 	  </dependencies>
   </metadata>
-<!--   <files>
-    <file src="bin\$configuration$\$id$.pdb" target="lib" />
-  </files> -->
 </package>
