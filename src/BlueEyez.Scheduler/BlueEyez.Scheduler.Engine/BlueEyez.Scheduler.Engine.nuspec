@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/MichaelGrabchak/BlueEyez.Scheduler</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>$copyright$</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="BlueEyez.Scheduler.Domain" version="$version$" />
+      <dependency id="BlueEyez.Scheduler.Domain.Data" version="$version$" />
+      <dependency id="BlueEyez.Scheduler.Job" version="$version$" />
+      <dependency id="BlueEyez.Scheduler.Loader" version="$version$" />
+      <dependency id="BlueEyez.Scheduler.Logging" version="$version$" />
+    </dependencies>
+  </metadata>
+</package>

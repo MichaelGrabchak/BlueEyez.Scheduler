@@ -87,5 +87,8 @@
       <Name>BlueEyez.Scheduler.Logging</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="BlueEyez.Scheduler.Infrastructure.Dependencies.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

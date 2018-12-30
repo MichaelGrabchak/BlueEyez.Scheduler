@@ -48,5 +48,8 @@
       <Name>BlueEyez.Scheduler.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="BlueEyez.Scheduler.Caching.Web.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
